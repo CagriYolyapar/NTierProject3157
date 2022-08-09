@@ -1,0 +1,20 @@
+﻿1=> Proje N-Tier mimari paternine göre yazılacaktır.
+
+2=> Projede acılacak katmanlar
+ENTITIES,
+MAP,
+DAL,
+BLL,
+COMMON (Ortak kullanılacak sınıfların tutulacagı katman olacaktır),
+API - UI (Projemizi dısarı acmak istedigimiz icin actıgımız ayrı bir katmandır),
+DTO(API'daki esnekligimizin proje bazlı artması icin acacagımız katmandır),
+UI(MVC olarak düsünlmüştür)
+
+3 => Projede degişken isimleri degişkenler local variable oldugu sürece camelCase, field oldugu sürece basında _ sembolü olmak üzere camelCase; Property, metot ve class isimleri PascalCase standartlarında yazılacaktır ve projede Türkçe karakter kullanılmayacaktır. CLass isimleri kesinlikle cogul olmayacaktır.
+
+4=> Katman isimleri Project ile baslayarak . sembolünden sonra katmansal takılarla bitecektir(Project.ENTITIES vs...)
+
+5=> Tasarım patternlerinden Generic Repository, Singleton Pattern ve Strategy Pattern kesinlikle kullanılacaktır... Mevcut algoritmada bu tasarım paternlerinin dısında bir baska Tasarım Paterni öngörülmemektedir...Ancak projenin esnekligi buna elverişli olduğu takdirde, projenin mimari paterniyle bir çakışma olmadığı takdirde (bu durum özel olarak istenecek olan bir Arge süreci icerisinde hemen belirlenmek zorundadır) gerekli görülürse rahatca eklenebilecektir...
+
+********
+Kendi proje fikrinizi uyguluyorsanız da , listeden bir proje secseniz de bu tarz bir teknik dökümantasyon istenmektedir...Kendi proje fikrini uygulamayı düsünen kişiler ise bu dökümantasyona ek olarak bir proje tanıtım dökümantasyonu yazmalıdır(Proje ne projesi, hangi kitle üzerine hitap ediyor, kullanılma amacı ve şekli ne, yaşam döngüsünün nasıl olması bekleniyor , yaşam süresinin ne kadar olması bekleniyor)
