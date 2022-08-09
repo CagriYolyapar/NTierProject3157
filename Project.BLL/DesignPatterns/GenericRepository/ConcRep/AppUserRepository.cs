@@ -1,4 +1,4 @@
-﻿,using Project.BLL.DesignPatterns.GenericRepository.BaseRep;
+﻿using Project.BLL.DesignPatterns.GenericRepository.BaseRep;
 using Project.ENTITIES.Models;
 using System;
 using System.Collections.Generic;
