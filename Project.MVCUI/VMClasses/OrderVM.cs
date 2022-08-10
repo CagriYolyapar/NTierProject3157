@@ -13,6 +13,6 @@ namespace Project.MVCUI.VMClasses
         public List<Order> Orders { get; set; }
         public PaymentDTO PaymentDTO { get; set; }
 
-        //Todo: PaginationVM,APIBanka kısmı,Template Entegrasyonu,Üyelik AKtivasyon,Admin CRUD işlemleri,Sipariş işlemler(Banka ile birlikte)
+        //Todo: PaginationVM,Template Entegrasyonu,Admin CRUD işlemleri,Sipariş işlemler(Banka ile birlikte)
     }
 }
