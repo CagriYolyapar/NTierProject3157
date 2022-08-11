@@ -1,6 +1,7 @@
 ﻿using Project.BLL.DesignPatterns.GenericRepository.ConcRep;
 using Project.ENTITIES.Models;
 using Project.MVCUI.Areas.Admin.AdminVMClasses;
+using Project.MVCUI.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,10 +44,35 @@ namespace Project.MVCUI.Areas.Admin.Controllers
 
 
         [HttpPost]
-        public ActionResult AddProduct(Product product)
+        public ActionResult AddProduct(Product product,HttpPostedFileBase image,string fileName)
         {
-            
+            product.ImagePath = ImageUploader.UploadImage("/Pictures/", image, fileName);
             _pRep.Add(product);
+            return RedirectToAction("ProductList");
+        }
+
+        public ActionResult UpdateProduct(int id)
+        {
+            ProductVM pvm = new ProductVM
+            {
+                Product = _pRep.Find(id),
+                Categories = _cRep.GetActives()
+            };
+            return View(pvm);
+        }
+
+        [HttpPost]
+        public ActionResult UpdateProduct(Product product)
+        {
+            //Todo:Update image ile ilgili ödev ver
+          
+            _pRep.Update(product);
+            return RedirectToAction("ProductList");
+        }
+
+        public ActionResult DeleteProduct(int id)
+        {
+            _pRep.Delete(_pRep.Find(id));
             return RedirectToAction("ProductList");
         }
     }

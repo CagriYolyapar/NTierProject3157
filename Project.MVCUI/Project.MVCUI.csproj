@@ -155,14 +155,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Admin\AdminScripts\AdminCategoryDTJ.js" />
+    <Content Include="Areas\Admin\AdminScripts\AdminProductDTJ.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\lightbox.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\close.png" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\next.png" />
+    <Content Include="img\prev.png" />
     <Content Include="OuterTools\404.html" />
     <Content Include="OuterTools\500.html" />
     <Content Include="OuterTools\advanced_form_components.html" />
@@ -1793,6 +1799,7 @@
     <Content Include="OuterTools\js\tasks.js" />
     <Content Include="OuterTools\js\toucheffects.js" />
     <Content Include="OuterTools\language_switch_bar.html" />
+    <Content Include="OuterTools\LightBox\lightbox.css" />
     <Content Include="OuterTools\lock_screen.html" />
     <Content Include="OuterTools\login.html" />
     <Content Include="OuterTools\morris.html" />
@@ -1981,6 +1988,11 @@
     <Content Include="Areas\Admin\Views\Category\CategoryList.cshtml" />
     <Content Include="Areas\Admin\Views\Category\AddCategory.cshtml" />
     <Content Include="Areas\Admin\Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\ProductList.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\AddProduct.cshtml" />
+    <Content Include="sass\_variables.sass" />
+    <Content Include="sass\screen.sass" />
+    <Content Include="sass\lightbox.sass" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -1991,6 +2003,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lightbox-2.6.js" />
+    <Content Include="OuterTools\LightBox\lightbox-2.6.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -2011,7 +2025,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\Product\" />
     <Folder Include="OuterTools\assets\jquery-file-upload\server\php\files\thumbnail\" />
     <Folder Include="Pictures\" />
   </ItemGroup>
