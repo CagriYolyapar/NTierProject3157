@@ -5,6 +5,12 @@
     ViewBag.Title = "ShoppingList";
 }
 
+@TempData["bos"]
+@TempData["sepetBos"]
+@TempData["sorun"]
+@TempData["baglantiRed"]
+@TempData["odeme"]
+
 <div class="row">
     <div class="col-md-3">
         
@@ -103,3 +109,10 @@
     </div>
 </div>
 
+@section Sepet{
+    <li>
+        <a href="@Url.Action("CartPage","Shopping")"><i class="icon-shopping-cart"></i> Cart  </a>
+    </li>
+    
+    
+    }
