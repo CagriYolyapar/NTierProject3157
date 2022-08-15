@@ -5,4 +5,8 @@
 3=> Farklı bir E-Ticaret sitesi yapın..
 
 4=> AfterParty
+
+5=> Bir Product'ın Update'i durumunda kişi resim secmezse eski resim varsa eski resim kalsın, yeni resim secilirse resim Update edilsin...
+
+6 => Bir baska database'e süpheli olan bu request'i logla
 *E-Ticaret sitesine EAV modeli ekleyerek geliştirin...

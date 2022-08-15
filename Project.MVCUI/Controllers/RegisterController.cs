@@ -71,7 +71,7 @@ namespace Project.MVCUI.Controllers
 
             //Supheli bir aktivite
             TempData["HesapAktifMi"] = "Hesabınız bulunamadı";
-            //Todo: Ödev => Bir baska database'e süpheli olan bu request'i logla
+           
             return RedirectToAction("Login", "Home");
         }
 

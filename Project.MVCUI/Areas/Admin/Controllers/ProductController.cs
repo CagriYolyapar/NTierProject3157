@@ -64,7 +64,7 @@ namespace Project.MVCUI.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult UpdateProduct(Product product)
         {
-            //Todo:Update image ile ilgili ödev ver
+            
           
             _pRep.Update(product);
             return RedirectToAction("ProductList");
