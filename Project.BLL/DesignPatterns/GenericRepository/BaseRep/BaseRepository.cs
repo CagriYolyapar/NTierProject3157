@@ -24,7 +24,7 @@ namespace Project.BLL.DesignPatterns.GenericRepository.BaseRep
         {
             _db.SaveChanges();
         }
-        public void Add(T item)
+        public virtual void Add(T item)
         {
             _db.Set<T>().Add(item);
             Save();

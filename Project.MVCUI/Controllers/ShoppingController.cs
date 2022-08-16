@@ -1,4 +1,5 @@
 ﻿using PagedList;
+using Project.BLL.DesignPatterns.GenericRepository.BaseRep;
 using Project.BLL.DesignPatterns.GenericRepository.ConcRep;
 using Project.COMMON.Tools;
 using Project.ENTITIES.Models;
@@ -24,6 +25,11 @@ namespace Project.MVCUI.Controllers
 
         public ShoppingController()
         {
+
+
+            //BaseRepository<Category> cRep = new CategoryRepository();
+
+
             _odRep = new OrderDetailRepository();
             _oRep = new OrderRepository();
             _pRep = new ProductRepository();

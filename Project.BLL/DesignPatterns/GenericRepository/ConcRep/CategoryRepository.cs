@@ -10,5 +10,11 @@ namespace Project.BLL.DesignPatterns.GenericRepository.ConcRep
 {
     public class CategoryRepository:BaseRepository<Category>
     {
+        public override void Add(Category item)
+        {
+            base.Add(item);
+        }
+
+   
     }
 }
